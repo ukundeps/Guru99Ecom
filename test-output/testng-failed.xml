@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Guru99EcomSuite]">
+  <listeners>
+    <listener class-name="com.guru.listener.Listener"/>
+  </listeners>
+  <test name="Guru99EcomTest(failed)">
+    <classes>
+      <class name="com.guru.test.HomepagePageTest">
+        <methods>
+          <include name="verify_Homepage_Title"/>
+          <include name="extendReportConfig"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.guru.test.HomepagePageTest -->
+    </classes>
+  </test> <!-- Guru99EcomTest(failed) -->
+</suite> <!-- Failed suite [Guru99EcomSuite] -->
