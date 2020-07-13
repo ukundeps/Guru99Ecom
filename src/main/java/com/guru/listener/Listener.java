@@ -1,10 +1,16 @@
 package com.guru.listener;
 
+import java.io.IOException;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class Listener implements ITestListener{
+import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.Status;
+import com.guru.base.Base;
+
+public class Listener extends Base implements ITestListener {
 	@Override
 	public void onTestStart(ITestResult result) {
 		System.out.println("Test Case Execution Started : " + result.getName());
@@ -14,17 +20,31 @@ public class Listener implements ITestListener{
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		System.out.println("Test Case Execution Successed : " + result.getName());
+		extentLog.log(Status.PASS, "Passed TestCase: " + result.getName());
+		extent.flush();
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
 		System.out.println("Test Case Execution Failed : " + result.getName());
 
+		extentLog.log(Status.FAIL, "Failed TestCase: " + result.getName());
+		String failedTCScreenshotPath = screenshotforExtentReport(driver, result.getName());
+		try {
+			extentLog.fail(result.getThrowable().getMessage(),
+					MediaEntityBuilder.createScreenCaptureFromPath(failedTCScreenshotPath).build());
+		} catch (IOException e) {
+			System.out.println("File not not found");
+			e.printStackTrace();
+		}
+		extent.flush();
 	}
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
 		System.out.println("Test Case Execution Skipped : " + result.getName());
+		extentLog.log(Status.PASS, "Skipped  TestCase: " + result.getName());
+		extent.flush();
 
 	}
 
@@ -42,6 +62,5 @@ public class Listener implements ITestListener{
 	public void onFinish(ITestContext context) {
 
 	}
-
 
 }

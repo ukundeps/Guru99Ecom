@@ -2,20 +2,16 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Guru99EcomSuite" duration-ms="23398" started-at="2020-07-11T17:24:22Z" finished-at="2020-07-11T17:24:45Z">
+  <suite name="Default suite" duration-ms="19658" started-at="2020-07-13T12:55:22Z" finished-at="2020-07-13T12:55:41Z">
     <groups>
     </groups>
-    <test name="Guru99EcomTest" duration-ms="23398" started-at="2020-07-11T17:24:22Z" finished-at="2020-07-11T17:24:45Z">
+    <test name="Default test" duration-ms="19658" started-at="2020-07-13T12:55:22Z" finished-at="2020-07-13T12:55:41Z">
       <class name="com.guru.test.HomepagePageTest">
-        <test-method status="PASS" signature="extendReportConfig()[pri:0, instance:com.guru.test.HomepagePageTest@598067a5]" name="extendReportConfig" is-config="true" duration-ms="482" started-at="2020-07-11T22:54:22Z" finished-at="2020-07-11T22:54:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extendReportConfig -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.guru.test.HomepagePageTest@598067a5]" name="setUp" is-config="true" duration-ms="17399" started-at="2020-07-11T22:54:22Z" finished-at="2020-07-11T22:54:40Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.guru.test.HomepagePageTest@1e9e725a]" name="setUp" is-config="true" duration-ms="19364" started-at="2020-07-13T18:25:22Z" finished-at="2020-07-13T18:25:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="verify_Homepage_Title()[pri:0, instance:com.guru.test.HomepagePageTest@598067a5]" name="verify_Homepage_Title" duration-ms="31" started-at="2020-07-11T22:54:40Z" finished-at="2020-07-11T22:54:40Z">
+        <test-method status="FAIL" signature="verify_Homepage_Title()[pri:0, instance:com.guru.test.HomepagePageTest@1e9e725a]" name="verify_Homepage_Title" duration-ms="26" started-at="2020-07-13T18:25:41Z" finished-at="2020-07-13T18:25:41Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -26,7 +22,7 @@
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertTrue(Assert.java:42)
 	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.guru.test.HomepagePageTest.verify_Homepage_Title(HomepagePageTest.java:18)
+	at com.guru.test.HomepagePageTest.verify_Homepage_Title(HomepagePageTest.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -58,18 +54,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Homepage_Title -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.guru.test.HomepagePageTest@598067a5]" name="tearDown" is-config="true" duration-ms="5445" started-at="2020-07-11T22:54:40Z" finished-at="2020-07-11T22:54:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_Homepage_Title status=FAILURE method=HomepagePageTest.verify_Homepage_Title()[pri:0, instance:com.guru.test.HomepagePageTest@598067a5] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.guru.test.HomepagePageTest@1e9e725a]" name="tearDown" is-config="true" duration-ms="229" started-at="2020-07-13T18:25:41Z" finished-at="2020-07-13T18:25:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.guru.test.HomepagePageTest -->
-    </test> <!-- Guru99EcomTest -->
-  </suite> <!-- Guru99EcomSuite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

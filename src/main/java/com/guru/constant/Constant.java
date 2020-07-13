@@ -18,15 +18,5 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 public class Constant {
 
-	public static WebDriver driver;
-	public static WebElement element;
-	public static List<WebElement> elements;
-	public static Set<String> allWindows;
-	public static FluentWait wait;
-	public static Actions action;
-	public static Select select;
-	public static Properties prop ;
-	public static  ExtentHtmlReporter htmlReporter;
-	public static ExtentReports extent;
-	public static ExtentTest extentLog;	
+	
 }
