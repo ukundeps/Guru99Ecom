@@ -25,11 +25,13 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.opera.OperaDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.ITestResult;
@@ -43,7 +45,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import com.guru.constant.Constant;
+
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -107,8 +109,17 @@ public class Base {
 
 		switch (browserName) {
 		case "chrome":
+			DesiredCapabilities cap = DesiredCapabilities.chrome();
+			cap.setCapability("download.prompt_for_download", "false");
+			cap.setCapability("directory_upgrade", "true");
+			cap.setCapability("plugins.plugins_disabled", "Chrome PDF Viewer");
+			ChromeOptions options=new ChromeOptions();
+			
+			options.addArguments("--print-to-pdf");
+			options.addArguments("--kiosk-printing");
+			options.setCapability("cap", cap);
 			WebDriverManager.chromedriver().version("2.40").setup();
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(options);
 			break;
 		case "firefox":
 			WebDriverManager.firefoxdriver().setup();
