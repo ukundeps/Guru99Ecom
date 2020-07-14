@@ -1,0 +1,10 @@
+2020-Jul-13 18:08:24,643 [main] GURU99 ECOM 
+  INFO  chrome is opened and Configured!! 
+2020-Jul-13 18:08:30,314 [main] GURU99 ECOM 
+  INFO  http://live.demoguru99.com/index.php/ is launched!!
+2020-Jul-13 18:08:30,397 [main] GURU99 ECOM 
+  INFO  Home page  :Returned Current Webpage Title!!
+2020-Jul-13 18:08:30,408 [main] GURU99 ECOM 
+  INFO  TC: verify_Homepage_Title : PASSED
+2020-Jul-13 18:08:31,311 [main] GURU99 ECOM 
+  INFO  Current browser window is Closed!!

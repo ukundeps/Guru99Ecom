@@ -7,7 +7,9 @@ import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.Properties;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -21,94 +23,73 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 
-
 import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import com.guru.constant.Constant;
+
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Base extends Constant {
+public class Base {
+
+	public static WebDriver driver;
+	public static WebElement element;
+	public static List<WebElement> elements;
+	public static Set<String> allWindows;
+	public static FluentWait wait;
+	public static Actions action;
+	public static Select select;
+	public static Properties prop;
+	public static ExtentHtmlReporter htmlReporter;
+	public static ExtentReports extent;
+	public static ExtentTest extentLog;
+
 	public static Logger log;
-	
-	@BeforeTest
-	public void extendReportConfig() {
-		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/ExtentReport/"+"ExtentReport.html");
+
+	public Base() {
+		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/ExtentReport/" + "ExtentReport.html");
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
-		extent.setSystemInfo("Tester Name", "Priya Ukunde");
-	}
-
-
-	@BeforeMethod
-	public void setUp() {
+		extent.setSystemInfo("Project", "Guru99Ecom");
 		log = Logger.getLogger("GURU99 ECOM");
 		PropertyConfigurator.configure(System.getProperty("user.dir") + "\\src\\main\\resources\\Log4j.properties");
-		openBrowserAnConfigure();
-	   //home=new HomepagePage();
-
-	   
-		launchURL();
-
-	}
-
-	@AfterMethod
-	public static void tearDown(ITestResult result) throws IOException {
-		if (result.getStatus() == ITestResult.FAILURE) {
-			extentLog.log(Status.FAIL, "Failed TestCase: " + result.getName());
-			String failedTCScreenshotPath = screenshotforExtentReport(driver, result.getName());
-			extentLog.fail(result.getThrowable().getMessage(),
-					MediaEntityBuilder.createScreenCaptureFromPath(failedTCScreenshotPath).build());
-		} else if (result.getStatus() == ITestResult.SUCCESS) {
-			extentLog.log(Status.PASS, "Passed TestCase: " + result.getName());
-		} else if (result.getStatus() == ITestResult.SKIP) {
-			extentLog.log(Status.PASS, "Skipped  TestCase: " + result.getName());
-
-		}
-		extent.flush();
-		closeBrowserWindow();
-	}
-
-	/**
-	 * To get Configuration Input from ObjectRepository.properties file
-	 * 
-	 * @param ORParameterName
-	 * @return ORParameterValue
-	 */
-
-	public static String getParameter(String parameter) {
 		prop = new Properties();
-		String locator = "";
+
 		try {
 			FileInputStream fis = new FileInputStream(
-					"C:\\Users\\NRK\\javapract\\PriyaRevison\\Guru99Ecom\\src\\main\\resources\\ObjectRepository.properties");
+					System.getProperty("user.dir")+"\\src\\main\\resources\\ObjectRepository.properties");
 			prop.load(fis);
-			locator = prop.getProperty(parameter).trim();
-
+			
 		} catch (FileNotFoundException e) {
 			System.out.println("Object repository not found!!");
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		// System.out.println("Config Parameter Name: "+locator);
-		return locator;
-
+		
+		
 	}
+
+	
+
+	
 
 	/**
 	 * 
@@ -117,9 +98,9 @@ public class Base extends Constant {
 	 * @param browserName
 	 */
 	public static void openBrowserAnConfigure() {
-		String browserName = getParameter("BrowserName");
-		long implicitWait = Integer.parseInt(getParameter("ImplicitWaitDuration"));
-		long pageLoadTimeout = Integer.parseInt(getParameter("PageLoadTimeOutDuration"));
+		String browserName = prop.getProperty("BrowserName");
+		long implicitWait = Integer.parseInt(prop.getProperty("ImplicitWaitDuration"));
+		long pageLoadTimeout = Integer.parseInt(prop.getProperty("PageLoadTimeOutDuration"));
 
 		switch (browserName) {
 		case "chrome":
@@ -160,7 +141,7 @@ public class Base extends Constant {
 	 * This method is used to provided nexplicit wait
 	 */
 	public static void expllicitWait() {
-		long explicitWait = Integer.parseInt(getParameter("ExplicitWaitDuration"));
+		long explicitWait = Integer.parseInt(prop.getProperty("ExplicitWaitDuration"));
 		wait = new FluentWait(driver);
 		wait.withTimeout(explicitWait, TimeUnit.SECONDS);
 		log.info(explicitWait + "SECONDS" + " Explicit wait is applied!!");
@@ -172,7 +153,7 @@ public class Base extends Constant {
 	 * @param url
 	 */
 	public static void launchURL() {
-		String baseURL = getParameter("BaseURL");
+		String baseURL = prop.getProperty("BaseURL");
 		driver.get(baseURL);
 		log.info(baseURL + " is launched!!");
 	}
@@ -240,12 +221,12 @@ public class Base extends Constant {
 	// This method will return path of Screenshot so that from this path captured
 	// screenshot can be attached to Extent Report Automatically
 	public static String screenshotforExtentReport(WebDriver driver, String tcName) {
-		String path = getParameter("failedTCScreenshoFilePath");
 		DateFormat dateFormat = new SimpleDateFormat("dd-MM-YY hh-mm-ss");
 		Date date = new Date();
 		String datetime = dateFormat.format(date);
 
-		String screenshotPath = "C:\\Users\\NRK\\javapract\\PriyaRevison\\Guru99Ecom\\Screenshots\\" + tcName + " dated " + datetime + ".png";
+		String screenshotPath = System.getProperty("user.dir")+"\\Screenshots\\" + tcName
+				+ " dated " + datetime + ".png";
 
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
