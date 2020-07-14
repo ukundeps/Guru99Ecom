@@ -43,7 +43,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import com.guru.constant.Constant;
+
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -70,9 +70,6 @@ public class Base {
 		extent.setSystemInfo("Project", "Guru99Ecom");
 		log = Logger.getLogger("GURU99 ECOM");
 		PropertyConfigurator.configure(System.getProperty("user.dir") + "\\src\\main\\resources\\Log4j.properties");
-		
-		
-
 		prop = new Properties();
 
 		try {
