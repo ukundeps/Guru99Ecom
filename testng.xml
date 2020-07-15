@@ -6,8 +6,10 @@
 </listeners>
   <test name="Guru99EcomTest">
     <classes>
-      <class name="com.guru.test.HomepagePageTest"/>
-      <class name="com.guru.test.UserInterfaceSortingTest"/>
+      <class name="com.guru.test.HomepagePageTest" />
+			<class name="com.guru.test.UserInterfaceSortingTest" />
+			<class name="com.guru.test.MobileListTests" />
+			<class name="com.guru.test.PurchaseProductTests" />
     </classes>
   </test> <!-- Guru99EcomTest -->
 </suite> <!-- Guru99EcomSuite -->
