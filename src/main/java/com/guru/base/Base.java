@@ -161,7 +161,11 @@ public class Base {
 	/**
 	 * This method will closer Currently pointing Browser window by driver instance
 	 **/
+<<<<<<< HEAD
 	public static void closeBrowserWindow() {
+=======
+	public void closeBrowserWindow() {
+>>>>>>> refs/heads/AshBranch
 		driver.close();
 		log.info("Current browser window is Closed!!");
 	}
