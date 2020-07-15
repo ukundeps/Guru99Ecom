@@ -21,8 +21,8 @@ public class PdfPageTest extends PdfPage{
 	}
 
 	@Test
-	public void verifyToSavePDF() {
-	pdf.login();
+	public void verifyToSaveOrderAsPDF() {
+	pdf.loginAsUser();
 	log.info("Logined as User");
 	Assert.assertEquals(pdf.getOrderStatus(), "Pending");
 	pdf.printPdf();
@@ -32,7 +32,7 @@ public class PdfPageTest extends PdfPage{
 		
 		e.printStackTrace();
 	}
-	log.info("PDF saved");
+	log.info("PDF Saved");
 	}
 	
 	@AfterClass

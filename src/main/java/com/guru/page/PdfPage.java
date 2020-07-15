@@ -48,7 +48,7 @@ public class PdfPage extends Base {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void login() {
+	public void loginAsUser() {
 		Account.click();
 		Actions action=new Actions(driver);
 		action.moveToElement(Myaccount).click().build().perform();

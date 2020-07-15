@@ -23,8 +23,8 @@ public class WishlistPageTest extends WishlistPage{
 	}
 
 	@Test
-	public void verifyToCreateAccount() {
-	wish.CreateAccount();
+	public void verifyToCreateAccountAndShareWishlist() {
+	wish.CreateAccountAsUser();
 	Assert.assertEquals(wish.getRegisterMsg(), "Thank you for registering with Main Website Store.");
 	log.info("Account created");
 	wish.sharewishlist();
