@@ -82,7 +82,7 @@ public void sharewishlist() {
 	Tv.click();
 	Lcd.click();
 	Wishlist.click();
-	emailid.sendKeys("rosesinghritu@gmail.com");
+	emailid.sendKeys("singhritu@gmail.com");
 	emailmsg.sendKeys("Hey sharing my whislist with you. Have a look.");
 	sharewishlist.click();
 }

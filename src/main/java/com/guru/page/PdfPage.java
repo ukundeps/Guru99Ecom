@@ -67,7 +67,7 @@ public class PdfPage extends Base {
 		return status.getText();
 	}
 	
-	public void savepdf() throws IllegalArgumentException, IllegalAccessException {
+	public void saveAsPdf() throws IllegalArgumentException, IllegalAccessException {
 		try {
 			Thread.sleep(10000);
 			Robot robo = new Robot();

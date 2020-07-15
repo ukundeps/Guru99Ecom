@@ -21,13 +21,13 @@ public class PdfPageTest extends PdfPage{
 	}
 
 	@Test
-	public void verifyToCreateAccount() {
+	public void verifyToSavePDF() {
 	pdf.login();
 	log.info("Logined as User");
 	Assert.assertEquals(pdf.getOrderStatus(), "Pending");
 	pdf.printPdf();
 	try {
-		pdf.savepdf();
+		pdf.saveAsPdf();
 	} catch (IllegalArgumentException | IllegalAccessException e) {
 		
 		e.printStackTrace();

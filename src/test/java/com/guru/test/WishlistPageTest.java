@@ -25,8 +25,8 @@ public class WishlistPageTest extends WishlistPage{
 	@Test
 	public void verifyToCreateAccount() {
 	wish.CreateAccount();
-	log.info("Account created");
 	Assert.assertEquals(wish.getRegisterMsg(), "Thank you for registering with Main Website Store.");
+	log.info("Account created");
 	wish.sharewishlist();
 	Assert.assertEquals(wish.getWishlistMsg(), "Your Wishlist has been shared.");
 	log.info("Wishlist shared");
