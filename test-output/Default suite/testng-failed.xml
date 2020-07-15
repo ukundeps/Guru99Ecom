@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.guru.test.PurchaseProductTests">
+      <class name="com.guru.test.UserInterfaceSortingTest">
         <methods>
-          <include name="setUp"/>
-          <include name="verify_Place_Order_Generated"/>
+          <include name="to_Verify_Discount_Coupon_Works_Correctly"/>
+          <include name="initMethod"/>
         </methods>
-      </class> <!-- com.guru.test.PurchaseProductTests -->
+      </class> <!-- com.guru.test.UserInterfaceSortingTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
