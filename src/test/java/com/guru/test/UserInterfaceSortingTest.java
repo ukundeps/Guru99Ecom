@@ -20,6 +20,7 @@ public class UserInterfaceSortingTest extends Base{
 
 	@Test(dataProvider = "Sorting_Filter", dataProviderClass = UserInterfaceSortingPage.class)
 	public void to_Verify_Element_Sorted_By(String product,String filter) {
+		extentLog = extent.createTest(" to_Verify_Element_Sorted_By");
 		pageObj.clickOn(product);
 		pageObj.clickOn("Sort Filter");
 		pageObj.sort_Element_By(filter);
@@ -28,6 +29,7 @@ public class UserInterfaceSortingTest extends Base{
 	
 	@Test
 	public void to_Verify_Discount_Coupon_Works_Correctly() {
+		extentLog = extent.createTest(" to_Verify_Discount_Coupon_Works_Correctly");
 		pageObj.clickOn("Mobile");
 		pageObj.clickOn("Add to cart : IPHONE");
 		pageObj.enterCouponCode("GURU50");
