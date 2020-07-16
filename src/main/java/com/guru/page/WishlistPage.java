@@ -64,7 +64,7 @@ WebElement sharewishlist;
 @FindBy(xpath="//li[@class=\"success-msg\"]/descendant::span")
 WebElement wishlistmsg;
 
-public void CreateAccountAsUser() {
+public void CreateAccount() {
 	Account.click();
 	Actions action=new Actions(driver);
 	action.moveToElement(Myaccount).click().build().perform();

@@ -22,7 +22,7 @@ public class PdfPageTest extends PdfPage{
 
 	@Test
 	public void verifyToSaveOrderAsPDF() {
-	pdf.loginAsUser();
+	pdf.login();
 	log.info("Logined as User");
 	Assert.assertEquals(pdf.getOrderStatus(), "Pending");
 	pdf.printPdf();
