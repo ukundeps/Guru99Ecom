@@ -169,7 +169,10 @@ public class Base {
 	/**
 	 * This method will closer Currently pointing Browser window by driver instance
 	 **/
-	public static void closeBrowserWindow() {
+
+
+
+	public void closeBrowserWindow() {
 		driver.close();
 		log.info("Current browser window is Closed!!");
 	}

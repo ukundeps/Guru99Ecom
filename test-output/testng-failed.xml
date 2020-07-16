@@ -3,12 +3,23 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.guru.test.UserInterfaceSortingTest">
         <methods>
           <include name="to_Verify_Discount_Coupon_Works_Correctly"/>
           <include name="initMethod"/>
         </methods>
       </class> <!-- com.guru.test.UserInterfaceSortingTest -->
+=======
+      <class name="com.guru.test.ShoppingCartTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verify_two_product_comparison"/>
+          <include name="verify_cart_functionality"/>
+        </methods>
+      </class> <!-- com.guru.test.ShoppingCartTest -->
+>>>>>>> refs/heads/AshBranch
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
