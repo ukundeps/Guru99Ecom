@@ -85,12 +85,7 @@ public class Base {
 			e.printStackTrace();
 		}
 		
-		
-	}
-
-	
-
-	
+		}
 
 	/**
 	 * 
