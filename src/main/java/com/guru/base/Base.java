@@ -32,6 +32,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -53,7 +54,7 @@ public class Base {
 	public static WebElement element;
 	public static List<WebElement> elements;
 	public static Set<String> allWindows;
-	public static FluentWait wait;
+	public static WebDriverWait wait;
 	public static Actions action;
 	public static Select select;
 	public static Properties prop;
@@ -133,6 +134,7 @@ public class Base {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(implicitWait, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(pageLoadTimeout, TimeUnit.SECONDS);
+		wait = new WebDriverWait(driver, 20);
 		log.info(browserName + " is opened and Configured!! ");
 
 	}
@@ -142,7 +144,7 @@ public class Base {
 	 */
 	public static void expllicitWait() {
 		long explicitWait = Integer.parseInt(prop.getProperty("ExplicitWaitDuration"));
-		wait = new FluentWait(driver);
+		wait = new WebDriverWait(driver, explicitWait);
 		wait.withTimeout(explicitWait, TimeUnit.SECONDS);
 		log.info(explicitWait + "SECONDS" + " Explicit wait is applied!!");
 	}
@@ -154,6 +156,12 @@ public class Base {
 	 */
 	public static void launchURL() {
 		String baseURL = prop.getProperty("BaseURL");
+		driver.get(baseURL);
+		log.info(baseURL + " is launched!!");
+	}
+	
+	public static void launchAdminURL() {
+		String baseURL = prop.getProperty("AdminURL");
 		driver.get(baseURL);
 		log.info(baseURL + " is launched!!");
 	}
@@ -220,6 +228,8 @@ public class Base {
 		log.info(title + "  :Returned Current Webpage Title!!");
 		return title;
 	}
+
+	
 
 	// This method will return path of Screenshot so that from this path captured
 	// screenshot can be attached to Extent Report Automatically
