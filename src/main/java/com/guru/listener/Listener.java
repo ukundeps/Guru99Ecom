@@ -14,6 +14,7 @@ public class Listener extends Base implements ITestListener {
 	@Override
 	public void onTestStart(ITestResult result) {
 		System.out.println("Test Case Execution Started : " + result.getName());
+		extentLog=extent.createTest( result.getName());
 
 	}
 

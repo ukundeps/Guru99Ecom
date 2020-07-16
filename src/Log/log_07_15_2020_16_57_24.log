@@ -1,0 +1,10 @@
+2020-Jul-15 16:57:24,593 [main] GURU99 ECOM 
+  INFO  20SECONDS Explicit wait is applied!!
+2020-Jul-15 16:57:31,342 [main] GURU99 ECOM 
+  INFO  20SECONDS Explicit wait is applied!!
+2020-Jul-15 16:57:48,473 [main] GURU99 ECOM 
+  INFO  successfully verified that you cannot add more product in cart than the product available in store
+2020-Jul-15 16:57:51,447 [main] GURU99 ECOM 
+  INFO  Current browser window is Closed!!
+2020-Jul-15 16:57:58,993 [main] GURU99 ECOM 
+  INFO  chrome is opened and Configured!! 

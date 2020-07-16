@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.guru.listener.Listener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.guru.test.PurchaseProductTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="verify_Place_Order_Generated"/>
+        </methods>
+      </class> <!-- com.guru.test.PurchaseProductTests -->
+      <class name="com.guru.test.UserInterfaceSortingTest">
+        <methods>
+          <include name="to_Verify_Discount_Coupon_Works_Correctly"/>
+          <include name="initMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.guru.test.UserInterfaceSortingTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
