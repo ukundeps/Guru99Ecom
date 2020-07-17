@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Guru99EcomSuite">
-<listeners>
-<listener class-name="com.guru.listener.Listener"></listener>
-</listeners>
-  <test name="Guru99EcomTest">
-    <classes>
-        <class name="com.guru.test.HomepagePageTest" />
-	<class name="com.guru.test.UserInterfaceSortingTest" />
-	<class name="com.guru.test.MobileListTests" />
-	<class name="com.guru.test.PurchaseProductTests" />
-	<class name="com.guru.test.ProductFunctionalityTest" />
-    </classes>
-  </test> <!-- Guru99EcomTest -->
-</suite> <!-- Guru99EcomSuite -->
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.guru.listener.Listener"></listener>
+	</listeners>
+	<test thread-count="5" name="Test">
+		<packages>
+			<package name="com.guru.test" />
+		</packages>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
