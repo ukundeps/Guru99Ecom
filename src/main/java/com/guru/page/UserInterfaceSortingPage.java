@@ -101,11 +101,11 @@ public class UserInterfaceSortingPage extends Base {
 	public Object[][] sorting_Options() {
 		Object[][] data = { 
 				{ "Mobile", "Name" },
-				{ "Mobile", "Position" },
-				{ "Mobile", "Price" },
-				{ "TV", "Name" },
-				{ "TV", "Position" }, 
-				{ "TV", "Price" }
+			//	{ "Mobile", "Position" },
+			//	{ "Mobile", "Price" },
+			//	{ "TV", "Name" },
+			//	{ "TV", "Position" }, 
+			//	{ "TV", "Price" }
 
 		};
 		return data;
