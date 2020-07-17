@@ -32,6 +32,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -46,13 +47,13 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-
+import com.guru.listener.WebEventListener;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base {
 
-	public static WebDriver driver;
+	public static WebDriver maindriver;
 	public static WebElement element;
 	public static List<WebElement> elements;
 	public static Set<String> allWindows;
@@ -63,6 +64,7 @@ public class Base {
 	public static ExtentHtmlReporter htmlReporter;
 	public static ExtentReports extent;
 	public static ExtentTest extentLog;
+	public static EventFiringWebDriver driver;
 
 	public static Logger log;
 
@@ -112,23 +114,23 @@ public class Base {
 			options.addArguments("--kiosk-printing");
 			options.setCapability("cap", cap);
 			WebDriverManager.chromedriver().version("2.40").setup();
-			driver = new ChromeDriver(options);
+			maindriver = new ChromeDriver(options);
 			break;
 		case "firefox":
 			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
+			maindriver = new FirefoxDriver();
 			break;
 		case "ie":
 			WebDriverManager.iedriver().setup();
-			driver = new InternetExplorerDriver();
+			maindriver = new InternetExplorerDriver();
 			break;
 		case "opera":
 			WebDriverManager.operadriver().setup();
-			driver = new OperaDriver();
+			maindriver = new OperaDriver();
 			break;
 		case "edge":
 			WebDriverManager.edgedriver().setup();
-			driver = new EdgeDriver();
+			maindriver = new EdgeDriver();
 			break;
 		default:
 
@@ -136,6 +138,13 @@ public class Base {
 			break;
 
 		}
+		
+		driver = new EventFiringWebDriver(maindriver); 
+		WebEventListener webevent=new WebEventListener();
+		 driver.register(webevent);
+		
+		
+		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(implicitWait, TimeUnit.SECONDS);

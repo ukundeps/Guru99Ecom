@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Guru99EcomSuite">
-<listeners>
-<listener class-name="com.guru.listener.Listener"></listener>
-</listeners>
-  <test name="Guru99EcomTest">
+<suite name="GuruSuite">
+  <test name="GuruTest">
     <classes>
-        <class name="com.guru.test.HomepagePageTest" />
-	<class name="com.guru.test.UserInterfaceSortingTest" />
-	<class name="com.guru.test.MobileListTests" />
-	<class name="com.guru.test.PurchaseProductTests" />
-	<class name="com.guru.test.ProductFunctionalityTest" />
+      <class name="com.guru.test.MobileListTests"/>
+      <class name="com.guru.test.PurchaseProductTests"/>
+      <class name="com.guru.test.ProductFunctionalityTest"/>
+      <class name="com.guru.test.PdfPageTest"/>
+      <class name="com.guru.test.MyAccountPageTest"/>
+      <class name="com.guru.test.WishlistPageTest"/>
+      <class name="com.guru.test.customer.Customer_EditCustomer_PageTest"/>
+      <class name="com.guru.test.AdminLoginPageTest"/>
+      <class name="com.guru.test.HomepagePageTest"/>
+      <class name="com.guru.test.LoginPageTest"/>
+      <class name="com.guru.test.UserInterfaceSortingTest"/>
     </classes>
-  </test> <!-- Guru99EcomTest -->
-</suite> <!-- Guru99EcomSuite -->
+  </test> <!-- GuruTest -->
+</suite> <!-- GuruSuite -->

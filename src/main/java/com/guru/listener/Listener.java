@@ -25,7 +25,7 @@ public class Listener extends Base implements ITestListener {
 		extent.flush();
 	}
 
-	@Override
+	@Override 
 	public void onTestFailure(ITestResult result) {
 		System.out.println("Test Case Execution Failed : " + result.getName());
 

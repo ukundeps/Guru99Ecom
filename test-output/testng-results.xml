@@ -1,198 +1,712 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results skipped="2" failed="7" total="14" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-14T18:55:10 IST" name="Default suite" finished-at="2020-07-14T18:56:07 IST" duration-ms="56028">
+  <suite name="GuruSuite" duration-ms="384234" started-at="2020-07-17T14:34:53Z" finished-at="2020-07-17T14:41:18Z">
     <groups>
     </groups>
-    <test started-at="2020-07-14T18:55:10 IST" name="Default test" finished-at="2020-07-14T18:56:07 IST" duration-ms="56028">
-      <class name="com.guru.test.PdfPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.guru.test.PdfPageTest@7e7be63f]" started-at="2020-07-14T18:55:10 IST" name="setUp" finished-at="2020-07-14T18:55:30 IST" duration-ms="19304" status="PASS">
+    <test name="GuruTest" duration-ms="384234" started-at="2020-07-17T14:34:53Z" finished-at="2020-07-17T14:41:18Z">
+      <class name="com.guru.test.PurchaseProductTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.guru.test.PurchaseProductTests@52e677af]" name="setUp" is-config="true" duration-ms="16885" started-at="2020-07-17T20:05:21Z" finished-at="2020-07-17T20:05:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyToCreateAccount()[pri:0, instance:com.guru.test.PdfPageTest@7e7be63f]" started-at="2020-07-14T18:55:30 IST" name="verifyToCreateAccount" finished-at="2020-07-14T18:56:06 IST" duration-ms="36591" status="PASS">
+        <test-method status="PASS" signature="verify_LogIn_User()[pri:1, instance:com.guru.test.PurchaseProductTests@52e677af]" name="verify_LogIn_User" duration-ms="5801" started-at="2020-07-17T20:05:38Z" finished-at="2020-07-17T20:05:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyToCreateAccount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.guru.test.PdfPageTest@7e7be63f]" started-at="2020-07-14T18:56:06 IST" name="tearDown" finished-at="2020-07-14T18:56:07 IST" duration-ms="64" status="PASS">
+        </test-method> <!-- verify_LogIn_User -->
+        <test-method status="FAIL" signature="verify_Place_Order_Generated()[pri:2, instance:com.guru.test.PurchaseProductTests@52e677af]" name="verify_Place_Order_Generated" duration-ms="38030" started-at="2020-07-17T20:05:44Z" finished-at="2020-07-17T20:06:22Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Element <button type="submit" title="Place Order" class="button btn-checkout" onclick="review.save();">...</button> is not clickable at point (204, 426). Other element would receive the click: <iframe id="primis_playerSekindoSPlayer5f11b75638807" title="Primis Player Videos" scrolling="no" allowfullscreen="" style="border: none; position: fixed; bottom: 10px; width: 315px; height: 177px; box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 6px 3px; border-radius: 1px; z-index: 2147483646; left: 10px;"></iframe>
+  (Session info: chrome=83.0.4103.116)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HT38EU9', ip: '169.254.147.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\NRK\AppData\Local\...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 83.0.4103.116, webStorageEnabled: true}
+Session ID: 0ca1d59f750d6c43f261fe933e38f4c3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <button type="submit" title="Place Order" class="button btn-checkout" onclick="review.save();">...</button> is not clickable at point (204, 426). Other element would receive the click: <iframe id="primis_playerSekindoSPlayer5f11b75638807" title="Primis Player Videos" scrolling="no" allowfullscreen="" style="border: none; position: fixed; bottom: 10px; width: 315px; height: 177px; box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 6px 3px; border-radius: 1px; z-index: 2147483646; left: 10px;"></iframe>
+  (Session info: chrome=83.0.4103.116)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HT38EU9', ip: '169.254.147.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\NRK\AppData\Local\...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 83.0.4103.116, webStorageEnabled: true}
+Session ID: 0ca1d59f750d6c43f261fe933e38f4c3
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy16.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.guru.page.PurchaseProductPage.click_Place_Order(PurchaseProductPage.java:179)
+	at com.guru.test.PurchaseProductTests.verify_Place_Order_Generated(PurchaseProductTests.java:91)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Place_Order_Generated -->
+      </class> <!-- com.guru.test.PurchaseProductTests -->
+      <class name="com.guru.test.ProductFunctionalityTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.guru.test.ProductFunctionalityTest@35083305]" name="setUp" is-config="true" duration-ms="16213" started-at="2020-07-17T20:06:23Z" finished-at="2020-07-17T20:06:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verify_cart_functionality()[pri:0, instance:com.guru.test.ProductFunctionalityTest@35083305]" name="verify_cart_functionality" duration-ms="8169" started-at="2020-07-17T20:06:39Z" description="Verify that you cannot add more product in cart than the product available in store" finished-at="2020-07-17T20:06:47Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [The requested quantity for Sony Xperia is not available] but found [* The maximum quantity allowed for purchase is 500.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [The requested quantity for Sony Xperia is not available] but found [* The maximum quantity allowed for purchase is 500.]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.guru.test.ProductFunctionalityTest.verify_cart_functionality(ProductFunctionalityTest.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_cart_functionality -->
+        <test-method status="FAIL" signature="verify_two_product_comparison()[pri:0, instance:com.guru.test.ProductFunctionalityTest@35083305]" name="verify_two_product_comparison" duration-ms="34" started-at="2020-07-17T20:06:48Z" description="Verify that you are able to compare two product" finished-at="2020-07-17T20:06:48Z">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=83.0.4103.116)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HT38EU9', ip: '169.254.147.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\NRK\AppData\Local\...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 83.0.4103.116, webStorageEnabled: true}
+Session ID: 7d3a09ed11aa56d068e07e087199eab0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=83.0.4103.116)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HT38EU9', ip: '169.254.147.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\NRK\AppData\Local\...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 83.0.4103.116, webStorageEnabled: true}
+Session ID: 7d3a09ed11aa56d068e07e087199eab0
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy16.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.guru.page.ProductFunctionalityPage.clickOnMobile(ProductFunctionalityPage.java:51)
+	at com.guru.test.ProductFunctionalityTest.verify_two_product_comparison(ProductFunctionalityTest.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_two_product_comparison -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.guru.test.ProductFunctionalityTest@35083305]" name="tearDown" is-config="true" duration-ms="140" started-at="2020-07-17T20:06:48Z" finished-at="2020-07-17T20:06:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.guru.test.PdfPageTest -->
-=======
-<<<<<<< HEAD
-<testng-results skipped="0" failed="1" ignored="1" total="2" passed="0">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Default suite" duration-ms="45687" started-at="2020-07-14T17:05:19 IST" finished-at="2020-07-14T17:06:05 IST">
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="45687" started-at="2020-07-14T17:05:19 IST" finished-at="2020-07-14T17:06:05 IST">
-      <class name="com.guru.test.UserInterfaceSortingTest">
-        <test-method status="PASS" signature="initMethod()[pri:0, instance:com.guru.test.UserInterfaceSortingTest@4461c7e3]" name="initMethod" is-config="true" duration-ms="23604" started-at="2020-07-14T17:05:19 IST" finished-at="2020-07-14T17:05:43 IST">
+      </class> <!-- com.guru.test.ProductFunctionalityTest -->
+      <class name="com.guru.test.LoginPageTest">
+        <test-method status="PASS" signature="initMethod()[pri:0, instance:com.guru.test.LoginPageTest@1b083826]" name="initMethod" is-config="true" duration-ms="15558" started-at="2020-07-17T20:10:21Z" finished-at="2020-07-17T20:10:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initMethod -->
-        <test-method status="FAIL" signature="to_Verify_Discount_Coupon_Works_Correctly()[pri:0, instance:com.guru.test.UserInterfaceSortingTest@4461c7e3]" name="to_Verify_Discount_Coupon_Works_Correctly" duration-ms="21977" started-at="2020-07-14T17:05:43 IST" finished-at="2020-07-14T17:06:05 IST">
+        <test-method status="FAIL" signature="userlogin()[pri:0, instance:com.guru.test.LoginPageTest@1b083826]" name="userlogin" duration-ms="5753" started-at="2020-07-17T20:10:37Z" description="To verify user is able to login successfuly" finished-at="2020-07-17T20:10:43Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Unsuccsessful User login expected [My Account0] but found [My Account]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Unsuccsessful User login expected [My Account0] but found [My Account]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at com.guru.test.LoginPageTest.userlogin(LoginPageTest.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userlogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.guru.test.LoginPageTest@1b083826]" name="tearDown" is-config="true" duration-ms="1834" started-at="2020-07-17T20:10:44Z" finished-at="2020-07-17T20:10:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.guru.test.LoginPageTest -->
+      <class name="com.guru.test.customer.Customer_EditCustomer_PageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.guru.test.customer.Customer_EditCustomer_PageTest@2145433b]" name="setUp" is-config="true" duration-ms="21408" started-at="2020-07-17T20:09:18Z" finished-at="2020-07-17T20:09:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="searchCustomerAndCompare_Detailes()[pri:0, instance:com.guru.test.customer.Customer_EditCustomer_PageTest@2145433b]" name="searchCustomerAndCompare_Detailes" duration-ms="9199" started-at="2020-07-17T20:09:39Z" description="To verify selected customer details in detailed page" finished-at="2020-07-17T20:09:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchCustomerAndCompare_Detailes -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.guru.test.customer.Customer_EditCustomer_PageTest@2145433b]" name="tearDown" is-config="true" duration-ms="186" started-at="2020-07-17T20:09:49Z" finished-at="2020-07-17T20:09:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.guru.test.customer.Customer_EditCustomer_PageTest -->
+      <class name="com.guru.test.MobileListTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.guru.test.MobileListTests@534df152]" name="setUp" is-config="true" duration-ms="18686" started-at="2020-07-17T20:04:53Z" finished-at="2020-07-17T20:05:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyMobilePageValue()[pri:1, instance:com.guru.test.MobileListTests@534df152]" name="verifyMobilePageValue" duration-ms="7724" started-at="2020-07-17T20:05:12Z" finished-at="2020-07-17T20:05:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMobilePageValue -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.guru.test.MobileListTests@534df152]" name="tearDown" is-config="true" duration-ms="276" started-at="2020-07-17T20:05:21Z" finished-at="2020-07-17T20:05:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.guru.test.MobileListTests -->
+      <class name="com.guru.test.WishlistPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.guru.test.WishlistPageTest@55a1c291]" name="setUp" is-config="true" duration-ms="16781" started-at="2020-07-17T20:08:53Z" finished-at="2020-07-17T20:09:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyToCreateAccountAndShareWishlist()[pri:0, instance:com.guru.test.WishlistPageTest@55a1c291]" name="verifyToCreateAccountAndShareWishlist" duration-ms="7594" started-at="2020-07-17T20:09:09Z" finished-at="2020-07-17T20:09:17Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class="success-msg"]/descendant::span"}
+  (Session info: chrome=83.0.4103.116)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HT38EU9', ip: '169.254.147.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\NRK\AppData\Local\...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 83.0.4103.116, webStorageEnabled: true}
+Session ID: ed02ee03301eb831838469c1c7807d8a
+*** Element info: {Using=xpath, value=//li[@class="success-msg"]/descendant::span}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class="success-msg"]/descendant::span"}
+  (Session info: chrome=83.0.4103.116)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HT38EU9', ip: '169.254.147.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\NRK\AppData\Local\...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 83.0.4103.116, webStorageEnabled: true}
+Session ID: ed02ee03301eb831838469c1c7807d8a
+*** Element info: {Using=xpath, value=//li[@class="success-msg"]/descendant::span}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy15.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.getText(Unknown Source)
+	at com.guru.page.WishlistPage.getRegisterMsg(WishlistPage.java:91)
+	at com.guru.test.WishlistPageTest.verifyToCreateAccountAndShareWishlist(WishlistPageTest.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyToCreateAccountAndShareWishlist -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.guru.test.WishlistPageTest@55a1c291]" name="tearDown" is-config="true" duration-ms="438" started-at="2020-07-17T20:09:18Z" finished-at="2020-07-17T20:09:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.guru.test.WishlistPageTest -->
+      <class name="com.guru.test.UserInterfaceSortingTest">
+        <test-method status="PASS" signature="initMethod()[pri:0, instance:com.guru.test.UserInterfaceSortingTest@105fece7]" name="initMethod" is-config="true" duration-ms="17656" started-at="2020-07-17T20:10:46Z" finished-at="2020-07-17T20:11:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initMethod -->
+        <test-method status="FAIL" signature="to_Verify_Discount_Coupon_Works_Correctly()[pri:0, instance:com.guru.test.UserInterfaceSortingTest@105fece7]" name="to_Verify_Discount_Coupon_Works_Correctly" duration-ms="12454" started-at="2020-07-17T20:11:03Z" finished-at="2020-07-17T20:11:16Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Coupon code cannot Applied correctly expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Coupon code cannot Applied correctly expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.failNotEquals(Assert.java:968)
-at org.testng.Assert.assertTrue(Assert.java:43)
-at com.guru.test.UserInterfaceSortingTest.to_Verify_Discount_Coupon_Works_Correctly(UserInterfaceSortingTest.java:34)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:767)
-at org.testng.TestRunner.run(TestRunner.java:588)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
-at org.testng.TestNG.runSuites(TestNG.java:1066)
-at org.testng.TestNG.run(TestNG.java:1034)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.guru.test.UserInterfaceSortingTest.to_Verify_Discount_Coupon_Works_Correctly(UserInterfaceSortingTest.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- to_Verify_Discount_Coupon_Works_Correctly -->
-      </class> <!-- com.guru.test.UserInterfaceSortingTest -->
-=======
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Default suite" duration-ms="108995" started-at="2020-07-15T16:56:45 IST" finished-at="2020-07-15T16:58:34 IST">
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="108995" started-at="2020-07-15T16:56:45 IST" finished-at="2020-07-15T16:58:34 IST">
-      <class name="com.guru.test.ShoppingCartTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.guru.test.ShoppingCartTest@14ec4505]" name="setUp" is-config="true" duration-ms="38673" started-at="2020-07-15T16:56:45 IST" finished-at="2020-07-15T16:57:24 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verify_cart_functionality()[pri:0, instance:com.guru.test.ShoppingCartTest@14ec4505]" name="verify_cart_functionality" duration-ms="24433" started-at="2020-07-15T16:57:24 IST" description="Verify that you cannot add more product in cart than the product available in store" finished-at="2020-07-15T16:57:48 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_cart_functionality -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.guru.test.ShoppingCartTest@14ec4505]" name="tearDown" is-config="true" duration-ms="2929" started-at="2020-07-15T16:57:48 IST" finished-at="2020-07-15T16:57:51 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.guru.test.ShoppingCartTest@14ec4505]" name="setUp" is-config="true" duration-ms="24317" started-at="2020-07-15T16:57:51 IST" finished-at="2020-07-15T16:58:15 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verify_two_product_comparison()[pri:0, instance:com.guru.test.ShoppingCartTest@14ec4505]" name="verify_two_product_comparison" duration-ms="15805" started-at="2020-07-15T16:58:15 IST" description="Verify that you are able to compare two product" finished-at="2020-07-15T16:58:31 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_two_product_comparison -->
-        <test-method status="FAIL" signature="tearDown()[pri:0, instance:com.guru.test.ShoppingCartTest@14ec4505]" name="tearDown" is-config="true" duration-ms="2424" started-at="2020-07-15T16:58:31 IST" finished-at="2020-07-15T16:58:34 IST">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+        <test-method status="SKIP" signature="to_Verify_Element_Sorted_By(java.lang.String, java.lang.String)[pri:0, instance:com.guru.test.UserInterfaceSortingTest@105fece7]" name="to_Verify_Element_Sorted_By" duration-ms="0" started-at="2020-07-17T20:11:16Z" data-provider="Sorting_Filter" finished-at="2020-07-17T20:11:16Z">
+          <exception class="java.lang.RuntimeException">
             <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=83.0.4103.116)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-ROSTLMCB', ip: '192.168.43.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\AshwiniK\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 83.0.4103.116, webStorageEnabled: true}
-Session ID: a1686bff1e43f79fcce98bea1a4ca308]]>
+              <![CDATA[Can't invoke method public java.lang.Object[][] com.guru.page.UserInterfaceSortingPage.sorting_Options() on this instance of class com.guru.test.UserInterfaceSortingTest due to class mismatch]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=83.0.4103.116)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-ROSTLMCB', ip: '192.168.43.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\AshwiniK\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 83.0.4103.116, webStorageEnabled: true}
-Session ID: a1686bff1e43f79fcce98bea1a4ca308
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
-at com.guru.base.Base.closeBrowserWindow(Base.java:167)
-at com.guru.test.ShoppingCartTest.tearDown(ShoppingCartTest.java:62)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:767)
-at org.testng.TestRunner.run(TestRunner.java:588)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
-at org.testng.TestNG.runSuites(TestNG.java:1066)
-at org.testng.TestNG.run(TestNG.java:1034)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+              <![CDATA[java.lang.RuntimeException: Can't invoke method public java.lang.Object[][] com.guru.page.UserInterfaceSortingPage.sorting_Options() on this instance of class com.guru.test.UserInterfaceSortingTest due to class mismatch
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:75)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1243)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:992)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1082)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- to_Verify_Element_Sorted_By -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.guru.test.UserInterfaceSortingTest@105fece7]" name="tearDown" is-config="true" duration-ms="886" started-at="2020-07-17T20:11:17Z" finished-at="2020-07-17T20:11:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.guru.test.ShoppingCartTest -->
->>>>>>> refs/heads/AshBranch
->>>>>>> 125454146d6e1185f7d6ee8bb377d0351dd2e7ed
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.guru.test.UserInterfaceSortingTest -->
+      <class name="com.guru.test.HomepagePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.guru.test.HomepagePageTest@40e6dfe1]" name="setUp" is-config="true" duration-ms="15520" started-at="2020-07-17T20:10:06Z" finished-at="2020-07-17T20:10:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verify_Homepage_Title()[pri:0, instance:com.guru.test.HomepagePageTest@40e6dfe1]" name="verify_Homepage_Title" duration-ms="13" started-at="2020-07-17T20:10:21Z" finished-at="2020-07-17T20:10:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Homepage_Title -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.guru.test.HomepagePageTest@40e6dfe1]" name="tearDown" is-config="true" duration-ms="197" started-at="2020-07-17T20:10:21Z" finished-at="2020-07-17T20:10:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.guru.test.HomepagePageTest -->
+      <class name="com.guru.test.MyAccountPageTest">
+        <test-method status="PASS" signature="initMethod()[pri:0, instance:com.guru.test.MyAccountPageTest@341b80b2]" name="initMethod" is-config="true" duration-ms="17319" started-at="2020-07-17T20:07:34Z" finished-at="2020-07-17T20:07:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initMethod -->
+        <test-method status="FAIL" signature="reorder()[pri:0, instance:com.guru.test.MyAccountPageTest@341b80b2]" name="reorder" duration-ms="60725" started-at="2020-07-17T20:07:52Z" description="To verify user can change quantity of already placed order and reorder it" finished-at="2020-07-17T20:08:52Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"a[title="Next"]"}
+  (Session info: chrome=83.0.4103.116)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HT38EU9', ip: '169.254.147.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\NRK\AppData\Local\...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 83.0.4103.116, webStorageEnabled: true}
+Session ID: 31b822d05e109fcd1a6e6a00c1e026ad
+*** Element info: {Using=css selector, value=a[title="Next"]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"a[title="Next"]"}
+  (Session info: chrome=83.0.4103.116)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HT38EU9', ip: '169.254.147.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\NRK\AppData\Local\...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 83.0.4103.116, webStorageEnabled: true}
+Session ID: 31b822d05e109fcd1a6e6a00c1e026ad
+*** Element info: {Using=css selector, value=a[title="Next"]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy15.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.guru.page.MyAccountPage.searchOrder(MyAccountPage.java:167)
+	at com.guru.test.MyAccountPageTest.reorder(MyAccountPageTest.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reorder -->
+      </class> <!-- com.guru.test.MyAccountPageTest -->
+      <class name="com.guru.test.AdminLoginPageTest">
+        <test-method status="FAIL" signature="initMethod()[pri:0, instance:com.guru.test.AdminLoginPageTest@2890c451]" name="initMethod" is-config="true" duration-ms="0" started-at="2020-07-17T20:09:49Z" finished-at="2020-07-17T20:09:49Z">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created exception
+from chrome not reachable
+  (Session info: chrome=83.0.4103.116)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.81 seconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HT38EU9', ip: '169.254.147.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created exception
+from chrome not reachable
+  (Session info: chrome=83.0.4103.116)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.81 seconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HT38EU9', ip: '169.254.147.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: driver.version: ChromeDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+	at com.guru.base.Base.openBrowserAnConfigure(Base.java:117)
+	at com.guru.test.AdminLoginPageTest.initMethod(AdminLoginPageTest.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:216)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:143)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initMethod -->
+        <test-method status="SKIP" signature="adminLogin()[pri:0, instance:com.guru.test.AdminLoginPageTest@2890c451]" name="adminLogin" duration-ms="2" started-at="2020-07-17T20:10:05Z" description="To verify admin login is successfull" finished-at="2020-07-17T20:10:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminLogin -->
+      </class> <!-- com.guru.test.AdminLoginPageTest -->
+      <class name="com.guru.test.PdfPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.guru.test.PdfPageTest@8e0379d]" name="setUp" is-config="true" duration-ms="16090" started-at="2020-07-17T20:06:48Z" finished-at="2020-07-17T20:07:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyToSaveOrderAsPDF()[pri:0, instance:com.guru.test.PdfPageTest@8e0379d]" name="verifyToSaveOrderAsPDF" duration-ms="29323" started-at="2020-07-17T20:07:05Z" finished-at="2020-07-17T20:07:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyToSaveOrderAsPDF -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.guru.test.PdfPageTest@8e0379d]" name="tearDown" is-config="true" duration-ms="126" started-at="2020-07-17T20:07:34Z" finished-at="2020-07-17T20:07:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.guru.test.PdfPageTest -->
+    </test> <!-- GuruTest -->
+  </suite> <!-- GuruSuite -->
 </testng-results>
