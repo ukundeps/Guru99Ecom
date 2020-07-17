@@ -37,9 +37,12 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -62,15 +65,11 @@ public class Base {
 	public static Properties prop;
 	public static ExtentHtmlReporter htmlReporter;
 	public static ExtentReports extent;
-	public static ExtentTest extentLog;
+	public static ExtentTest extentLog, tempextentLog;
 
 	public static Logger log;
-
+	
 	public Base() {
-		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/ExtentReport/" + "ExtentReport.html");
-		extent = new ExtentReports();
-		extent.attachReporter(htmlReporter);
-		extent.setSystemInfo("Project", "Guru99Ecom");
 		log = Logger.getLogger("GURU99 ECOM");
 		PropertyConfigurator.configure(System.getProperty("user.dir") + "\\src\\main\\resources\\Log4j.properties");
 		prop = new Properties();

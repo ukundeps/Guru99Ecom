@@ -4,6 +4,8 @@
 	<listeners>
 		<listener class-name="com.guru.listener.Listener"></listener>
 	</listeners>
+	<test name="Test">
+			<packages> <package name="com.guru.test" /> </packages>
 	<test thread-count="5" name="Test">
 		<packages>
 			<package name="com.guru.test" />
