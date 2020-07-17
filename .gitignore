@@ -1,1 +1,8 @@
 /target/
+ExtentReport/
+Screenshots/
+src/Log/
+target/
+test-output/
+pom.xml
+testng.xml
